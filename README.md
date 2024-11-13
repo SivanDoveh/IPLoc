@@ -21,10 +21,17 @@ Prepare the Qwen2-VL environment as shown in https://github.com/QwenLM/Qwen2-VL?
    ```
 
 ## Model Download:
-Download our model from https://drive.google.com/drive/folders/1u_1Mj_WMqMhA51MzN8j1FugU0Z2p6RpA?usp=sharing
+Download our model from [QWEN2-VL-ICL-LOC](https://drive.google.com/drive/folders/1u_1Mj_WMqMhA51MzN8j1FugU0Z2p6RpA?usp=sharing)
 
 ## Evaluation:
 To evaluate the ICLoc model, use the following command:
   ```SIVAN
 python ./Loc/Loc_Qwen2VL7B.py --data_path ./Loc/data/test_data_path.json --name ICLoc --lora_weights_path lora_pth_to_model
  ```
+
+Test data JSON files are in the data directory, including ICL - PDM, LASOT, and PerSeg.
+
+
+
+
+
