@@ -1,4 +1,4 @@
-# Teaching VLMs to Localize Specific Objects from In-context Examples (ICLoc)
+# Teaching VLMs to Localize Specific Objects from In-context Examples (IPLoc)
 ![teaser.pdf](https://github.com/SivanDoveh/ICLoc/blob/main/images/teaser.pdf)
 
 ## Environment Setup:
