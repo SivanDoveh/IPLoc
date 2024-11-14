@@ -1,5 +1,5 @@
 # Teaching VLMs to Localize Specific Objects from In-context Examples (IPLoc)
-![teaser.pdf](https://github.com/SivanDoveh/ICLoc/blob/main/images/teaser.pdf)
+![teaser.pdf](https://github.com/SivanDoveh/ICLoc/blob/main/images/teaser.jpg)
 
 ## Environment Setup:
 Prepare the Qwen2-VL environment as shown in https://github.com/QwenLM/Qwen2-VL?tab=readme-ov-file#quickstart
