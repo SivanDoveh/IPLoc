@@ -2,13 +2,13 @@
 ![teaser.pdf](https://github.com/SivanDoveh/ICLoc/blob/main/images/teaser.jpg)
 
 ## Environment Setup:
-Prepare the Qwen2-VL environment as shown in https://github.com/QwenLM/Qwen2-VL?tab=readme-ov-file#quickstart
+Prepare the Qwen2-VL environment as shown in [Qwen2VL Env](https://github.com/QwenLM/Qwen2-VL?tab=readme-ov-file#quickstart)
 
 ## Data Preparation:
 1. Download and place the images in the respective folders:
-   - per_seg: Place images from https://paperswithcode.com/dataset/perseg
-   - LASOT: Download images from http://vision.cs.stonybrook.edu/~lasot/download.html
-   - frames: Add TAO dataset images from https://taodataset.org
+   - per_seg: Download [PerSeg](https://paperswithcode.com/dataset/perseg) images 
+   - LASOT: Download [LASOT](http://vision.cs.stonybrook.edu/~lasot/download.html) images 
+   - frames(PDM): Download [PDM](https://github.com/dvirsamuel/PDM?tab=readme-ov-file#personalized-diffusion-features-matching-pdm) images
 
 2. The folder structure should look like this:
 
