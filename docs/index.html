@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta property="og:title" content="Teaching VLMs to Localize Specific Objects from In-context Examples"/>
-  <meta property="og:description" content=""/>
-  <meta property="og:url" content="https://sdoveh.github.io/IPLoc/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
+  <meta property="og:title" content="Teaching VLMs to Localize Specific Objects from In-context Examples">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://sdoveh.github.io/IPLoc/">
+  <meta property="og:image" content="static/image/your_banner_image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:title" content="">
   <meta name="twitter:description" content="">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
   <title>IPLoc</title>
   <link rel="icon" type="image/x-icon" href="static/images/car.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -46,88 +33,50 @@
 </head>
 <body>
 
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Teaching VLMs to Localize Specific Objects from In-context Examples</h1>
-            <div class="is-size-5 publication-authors">
-             
-              <span class="author-block">
-                Sivan Doveh<sup>1,2</sup>
-            </span>
-            <span class="author-block">
-                Nimrod Shabtay<sup>1,3</sup>
-            </span>
-            <span class="author-block">
-                Wei Lin<sup>4</sup>
-            </span>
-            <span class="author-block">
-                Eli Schwartz<sup>1</sup>
-            </span>
-            <span class="author-block">
-                Hilde Kuehne<sup>1,5</sup>
-            </span>
-            <span class="author-block">
-                Raja Giryes<sup>3</sup>
-            </span>
-            <span class="author-block">
-                Rogerio Feris<sup>6</sup>
-            </span>
-            <span class="author-block">
-                Leonid Karlinsky<sup>6</sup>
-            </span>
-            <span class="author-block">
-                James Glass<sup>7</sup>
-            </span>
-            <span class="author-block">
-                Assaf Arbelle<sup>1</sup>
-            </span>
-            <span class="author-block">
-                Shimon Ullman<sup>2</sup>
-            </span>
-            <span class="author-block">
-                M. Jehanzeb Mirza<sup>7</sup>
-            </span>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Teaching VLMs to Localize Specific Objects from In-context Examples</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Sivan Doveh<sup>1,2</sup></span>
+            <span class="author-block">Nimrod Shabtay<sup>1,3</sup></span>
+            <span class="author-block">Wei Lin<sup>4</sup></span>
+            <span class="author-block">Eli Schwartz<sup>1</sup></span>
+            <span class="author-block">Hilde Kuehne<sup>1,5</sup></span>
+            <span class="author-block">Raja Giryes<sup>3</sup></span>
+            <span class="author-block">Rogerio Feris<sup>6</sup></span>
+            <span class="author-block">Leonid Karlinsky<sup>6</sup></span>
+            <span class="author-block">James Glass<sup>7</sup></span>
+            <span class="author-block">Assaf Arbelle<sup>1</sup></span>
+            <span class="author-block">Shimon Ullman<sup>2</sup></span>
+            <span class="author-block">M. Jehanzeb Mirza<sup>7</sup></span>
             <br>
             <span class="author-block">
-                <sup>1</sup>IBM Research,
-                <sup>2</sup>Weizmann Institute of Science,
-                <sup>3</sup>Tel Aviv University,
-                <sup>4</sup>JKU Linz,
-                <sup>5</sup>Tuebingen AI Center,
-                <sup>6</sup>MIT-IBM,
-                <sup>7</sup>MIT CSAIL
+              <sup>1</sup>IBM Research,
+              <sup>2</sup>Weizmann Institute of Science,
+              <sup>3</sup>Tel Aviv University,
+              <sup>4</sup>JKU Linz,
+              <sup>5</sup>Tuebingen AI Center,
+              <sup>6</sup>MIT-IBM,
+              <sup>7</sup>MIT CSAIL
             </span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/abs/2411.13317" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/SivanDoveh/IPLoc" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2411.13317" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/SivanDoveh/IPLoc" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -136,23 +85,18 @@
   </div>
 </section>
 
-
-
 <section class="hero is-small">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="title is-3">Method</h2>
       <img src="static/images/teaser_cropped.jpg" alt="Image Description" height="50%">
       <h2 class="subtitle has-text-justified is-size-6">
-**In-context personalized localization** involves localizing object instances present in a scene (or query image) similar to the object presented as an in-context example.
-In this setting, the input to the model is a `category name`, `in-context image`, `bounding box coordinates` (not shown in this figure), and a `query image`. The model is tasked with localizing the *same* category of interest (presented as an in-context example) in the `query image`. Here, we visualize a few inputs and outputs from various VLMs highlighting that our fine-tuned model better captures the information in the in-context image.
-        Note, that H<sub>+</sub> and H<sub>-</sub> refer to the sentence embeddings from the text prompts.
+        **In-context personalized localization** involves localizing object instances present in a scene (or query image) similar to the object presented as an in-context example.
       </h2>
     </div>
   </div>
 </section>
 
-<!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -160,228 +104,39 @@ In this setting, the input to the model is a `category name`, `in-context image`
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Vision-Language Models (VLMs) have shown remarkable capabilities across diverse visual tasks, including image recognition, video understanding, and Visual Question Answering (VQA) when explicitly trained for these tasks. Despite these advances, we find that current VLMs lack a fundamental cognitive ability: learning to localize objects in a scene by taking into account the context. In this work, we focus on the task of few-shot personalized localization, where a model is given a small set of annotated images (in-context examples) -- each with a category label and bounding box -- and is tasked with localizing the same object type in a query image. To provoke personalized localization abilities in models, we present a data-centric solution that fine-tunes them using carefully curated data from video object tracking datasets. By leveraging sequences of frames tracking the same object across multiple shots, we simulate instruction-tuning dialogues that promote context awareness. To reinforce this, we introduce a novel regularization technique that replaces object labels with pseudo-names, ensuring the model relies on visual context rather than prior knowledge. Our method significantly enhances few-shot localization performance without sacrificing generalization, as demonstrated on several benchmarks tailored to personalized localization. This work is the first to explore and benchmark personalized few-shot localization for VLMs, laying a foundation for future research in context-driven vision-language applications.  
+            Vision-Language Models (VLMs) have shown remarkable capabilities across diverse visual tasks...
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/method.jpg" alt="Image Description" height="100%">
-      <h2 class="subtitle has-text-justified is-size-6">
-        **Overview of data creation and conversation format.** To instill few-shot personalized localization abilities in VLMs our \method creates multi-modal conversations by harnessing data from multiple video object tracking datasets. For semantic coherence, focus on personalization and stronger contextual awareness, we create these conversations by sampling frames from the same video, tracking a particular object of interest, and enhancing the training data by extending the conversations by replacing the true category name with pseudo names. These conversations are later employed to induce contextual awareness in VLMs.  
-      </h2>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{doveh2024teaching,
+      title={Teaching VLMs to Localize Specific Objects from In-context Examples},
+      author={Sivan Doveh and others},
+      journal={arXiv preprint arXiv:2411.13317},
+      year={2024},
+    }</code></pre>
   </div>
 </section>
-<!-- Image carousel
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-                  <h2 class="title is-3">Method and Results</h2>
-    <div class="level-set has-text-justified">
-                <p>
-                    Given a pre-trained model and statistics of the clean activations from the training data, our ActMAD aligns the
-activation responses from the shifted test data to the clean activations at test-time. We model the activation distributions in terms of the means
-and variances of each activation, such that the statistics have the same shape as the feature maps. The statistics of the training activations are
-pre-computed on the training set, or computed on unlabelled data without distribution shift.
-                </p>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-         <img src="static/images/method.jpg" alt="MY ALT TEXT" style="width:85%;"/>
 
-        <h2 class="subtitle has-text-centered">
-          Schematic of ActMAD.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/teaser.jpg" alt="MY ALT TEXT"  style="width:85%;"/>
-        <h2 class="subtitle has-text-centered">
-          Continuous online adaptation for ActMAD in changing weather conditions.
-        </h2> -->
-
-<!-- <section class="hero is-small">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-                          <h2 class="title is-3">Main Results</h2>
-
-      <img src="static/images/main_results.png" alt="Image Description" height="20%">
-      <h2 class="subtitle has-text-justified is-size-6">
-        Top-1 accuracy (%) for 20 datasets obtained by employing the ViT-B/32 backbone from OpenAI CLIP. S-TEMP refer to the results obtained by using the default template (a photo of a class name), while DS-TEMP refer to the results obtained by using the ensemble of dataset specific prompts.
-An empty placeholder for CUPL indicates that the respective baseline did not provide the handcrafted prompts for the dataset.
-For Waffle, mean results from 7 random runs are reported, following the original publication.
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-                  <h2 class="title is-3">Results</h2>
-    <div class="level-set has-text-justified">
-                <p>
-                    Given a pre-trained model and statistics of the clean activations from the training data, our ActMAD aligns the
-activation responses from the shifted test data to the clean activations at test-time. We model the activation distributions in terms of the means
-and variances of each activation, such that the statistics have the same shape as the feature maps. The statistics of the training activations are
-pre-computed on the training set, or computed on unlabelled data without distribution shift.
-                </p>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-         <img src="static/images/method.jpg" alt="MY ALT TEXT" style="width:85%;"/>
-
-        <h2 class="subtitle has-text-centered">
-          Schematic of ActMAD.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/teaser.jpg" alt="MY ALT TEXT"  style="width:85%;"/>
-        <h2 class="subtitle has-text-centered">
-          Continuous online adaptation for ActMAD in changing weather conditions.
-        </h2> -->
-
-        <!--      </div>-->
-<!--      <div class="item">-->
-<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
-<!--        <h2 class="subtitle has-text-centered">-->
-<!--         Third image description.-->
-<!--       </h2>-->
-<!--     </div>-->
-<!--     <div class="item">-->
-<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
-<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
-<!--      <h2 class="subtitle has-text-centered">-->
-<!--        Fourth image description.-->
-<!--      </h2>-->
-<!--    </div>-->
-  </div>
-</div>
-</div>
-<!--</section>-->
-<!-- End image carousel-->
-
-
-
-
-<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
-<!--<section class="hero is-small is-light">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-<!--      <div class="columns is-centered has-text-centered">-->
-<!--        <div class="column is-four-fifths">-->
-<!--          -->
-<!--          <div class="publication-video">-->
-<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
-<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
-
-
-<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
-<!--<section class="hero is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <h2 class="title is-3">Another Carousel</h2>-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--        <div class="item item-video1">-->
-<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel1.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video2">-->
-<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel2.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video3">-->
-<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel3.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
-
-
-
-
-
-
-<!-- Paper poster -->
-<!--<section class="hero is-small is-light">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <h2 class="title">Poster</h2>-->
-
-<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
-<!--          </iframe>-->
-
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{doveh2024teaching,
-        title={Teaching VLMs to Localize Specific Objects from In-context Examples},
-        author={Sivan Doveh and Nimrod Shabtay and Wei Lin and Eli Schwartz and Hilde Kuehne and Raja Giryes and Rogerio Feris and Leonid Karlinsky and James Glass and Assaf Arbelle and Shimon Ullman and M. Jehan Zeb Mirza},
-        journal={arXiv preprint arXiv:2411.13317},
-        year={2024},
-      }      
-        }</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
             The website template has been shamelessly copied from: <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
-<!--            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative-->
-<!--            Commons Attribution-ShareAlike 4.0 International License</a>.-->
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
