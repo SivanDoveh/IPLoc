@@ -145,7 +145,7 @@
       <img src="static/images/teaser_cropped.jpg" alt="Image Description" height="50%">
       <h2 class="subtitle has-text-justified is-size-6">
 In-context personalized localization involves localizing object instances present in a scene (or query image) similar to the object presented as an in-context example.
-In this setting, the input to the model is a `category name`, `in-context image`, `bounding box coordinates` (not shown in this figure), and a `query image`. The model is tasked with localizing the *same* category of interest (presented as an in-context example) in the `query image`. Here, we visualize a few inputs and outputs from various VLMs highlighting that our fine-tuned model better captures the information in the in-context image.
+In this setting, the input to the model is a 'category name', 'in-context image', 'bounding box coordinates' (not shown in this figure), and a 'query image'. The model is tasked with localizing the *same* category of interest (presented as an in-context example) in the 'query image'. Here, we visualize a few inputs and outputs from various VLMs highlighting that our fine-tuned model better captures the information in the in-context image.
       </h2>
     </div>
   </div>
@@ -173,7 +173,7 @@ In this setting, the input to the model is a `category name`, `in-context image`
     <div class="hero-body">
       <img src="static/images/method.jpg" alt="Image Description" height="100%">
       <h2 class="subtitle has-text-justified is-size-6">
-        Overview of data creation and conversation format. To instill few-shot personalized localization abilities in VLMs our \method creates multi-modal conversations by harnessing data from multiple video object tracking datasets. For semantic coherence, focus on personalization and stronger contextual awareness, we create these conversations by sampling frames from the same video, tracking a particular object of interest, and enhancing the training data by extending the conversations by replacing the true category name with pseudo names. These conversations are later employed to induce contextual awareness in VLMs.  
+        Overview of data creation and conversation format. To instill few-shot personalized localization abilities in VLMs our IPLoc creates multi-modal conversations by harnessing data from multiple video object tracking datasets. For semantic coherence, focus on personalization and stronger contextual awareness, we create these conversations by sampling frames from the same video, tracking a particular object of interest, and enhancing the training data by extending the conversations by replacing the true category name with pseudo names. These conversations are later employed to induce contextual awareness in VLMs.  
       </h2>
     </div>
   </div>
@@ -348,7 +348,7 @@ pre-computed on the training set, or computed on unlabelled data without distrib
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{doveh2024teaching,
         title={Teaching VLMs to Localize Specific Objects from In-context Examples},
-        author={Sivan Doveh and Nimrod Shabtay and Wei Lin and Eli Schwartz and Hilde Kuehne and Raja Giryes and Rogerio Feris and Leonid Karlinsky and James Glass and Assaf Arbelle and Shimon Ullman and M. Jehan Zeb Mirza},
+        author={Sivan Doveh and Nimrod Shabtay and Wei Lin and Eli Schwartz and Hilde Kuehne and Raja Giryes and Rogerio Feris and Leonid Karlinsky and James Glass and Assaf Arbelle and Shimon Ullman and M. Jehanzeb Mirza},
         journal={arXiv preprint arXiv:2411.13317},
         year={2024},
       }      
