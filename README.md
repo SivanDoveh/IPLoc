@@ -1,4 +1,6 @@
 # Teaching VLMs to Localize Specific Objects from In-context Examples (IPLoc)
+This repository contains the code for the paper "[Teaching VLMs to Localize Specific Objects from In-context Examples (IPLoc)](https://arxiv.org/html/2411.13317v1)", by Sivan Doveh et al
+
 ![teaser.pdf](https://github.com/SivanDoveh/ICLoc/blob/main/images/teaser2.jpg)
 
 ## Environment Setup:
