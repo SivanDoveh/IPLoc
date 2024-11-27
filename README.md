@@ -29,7 +29,7 @@ Download our model from [QWEN2-VL-ICL-LOC](https://drive.google.com/drive/folder
 ## Evaluation:
 To evaluate the ICLoc model, use the following command:
   ```SIVAN
-python Loc_Qwen2VL7B.py --data_path ./Loc/data/test_data_path.json --name IPLocEval --lora_weights_path lora_pth_to_model
+python Loc_Qwen2VL7B.py --data_path ./data/test_data_path.json --name IPLocEval --lora_weights_path lora_pth_to_model
  ```
 
 Test data JSON files are in the data directory, including ICL - PDM, LASOT, and PerSeg.
